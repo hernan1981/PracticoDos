@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnSumar"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/btnZoomMas"
+        app:layout_constraintEnd_toStartOf="@+id/btnRestar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCero" />
+
+    <Button
+        android:id="@+id/btnRestar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnRestar"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/btnZoomMenos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCero" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnReset"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnZoomMenos"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <Button
+        android:id="@+id/btnOcultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnOcultar"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnZoomMas"
+        app:layout_constraintVertical_bias="0.863" />
+
+    <Button
+        android:id="@+id/btnZoomMenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnZoomMenos"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/btnReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRestar" />
+
+    <Button
+        android:id="@+id/btnZoomMas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnZoomMas"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/btnOcultar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSumar" />
+
+    <ImageView
+        android:id="@+id/imgMascota"
+        android:layout_width="178dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="16dp"
+        android:background="@mipmap/mascota"
+        android:contentDescription="@string/MascotaPantallaUno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txtCero"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgMascota" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

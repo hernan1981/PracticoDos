@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SegundaPantalla">
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="144dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnConvertir"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMostrarResultado" />
+
+    <Button
+        android:id="@+id/btnReiniciar"
+        android:layout_width="144dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/btnReiniciar"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toEndOf="@+id/btnConvertir"
+        app:layout_constraintTop_toBottomOf="@+id/txtMostrarResultado" />
+
+    <EditText
+        android:id="@+id/txtMonto"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="232dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="@string/txtMonto"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConversor" />
+
+    <ImageView
+        android:id="@+id/imgMascota2"
+        android:layout_width="120dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/mascota" />
+
+    <RadioGroup
+        android:id="@+id/rdbMonedas"
+        android:layout_width="196dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="10dp"
+        android:checkedButton="@id/rdbDolar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSeleccion">
+
+        <RadioButton
+            android:id="@+id/rdbDolar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#E91E63"
+            android:checked="false"
+            android:text="@string/rdbDolar"
+            android:textAlignment="textStart"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdbEuro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rdbEuro"
+            android:textAlignment="textStart"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdbReal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rdbReal"
+            android:textAlignment="textStart"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtSeleccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/txtSeleccion"
+        android:textAlignment="center"
+        android:textColor="@color/colorSeleccion"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMonto" />
+
+    <TextView
+        android:id="@+id/txtConversor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/txtConversor"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMascota2" />
+
+    <EditText
+        android:id="@+id/txtMostrarResultado"
+        android:layout_width="203dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/txtMostrarResultado"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdbMonedas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

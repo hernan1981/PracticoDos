@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pratique Deux</string>
+    <string name="txtresultado">Résultat</string>
+    <string name="txtConversor">Convertisseur de devises</string>
+    <string name="txtSeleccion">Sélectionner une devise</string>
+    <string name="rdbReal">Real (Brazil)</string>
+    <string name="rdbEuro">Euro</string>
+    <string name="rdbDolar">Dolar</string>
+    <string name="txtMonto">Entrez le montant en pesos</string>
+    <string name="btnReiniciar">Redémarrer</string>
+    <string name="btnConvertir">Changer</string>
+    <string name="btnOcultar">Cacher</string>
+    <string name="btnRestar">Soustraire</string>
+    <string name="btnSumar">Ajouter</string>
+    <string name="MascotaPantallaUno">Mascotte</string>
+    <string name="txtMostrarResultado">Résultat</string>
+</resources>
